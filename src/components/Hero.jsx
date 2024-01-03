@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="font-semibold">
           <p className="text-xl text-gray-600 my-2">Hello I'm</p>
-          <h1 className="text-4xl my-2">K P Ramanath</h1>
+          <h1 className="text-6xl my-2">K P Ramanath</h1>
           <h2 className="text-2xl text-gray-600 my-2">Full Stack Developer</h2>
         </div>
         <div className="my-2 font-semibold">
