@@ -6,21 +6,23 @@ const Hero = () => {
   return (
     <div className="mx-5 my-36 flex justify-center gap-56">
       <img
-        className="rounded-full w-96 shadow-2xl"
+        className="hidden md:block rounded-full w-96 shadow-2xl"
         src="/document.jpeg"
         alt="protfolio"
       />
       <div className="flex flex-col justify-center items-center">
         <div className="font-semibold">
-          <p className="text-xl text-gray-600 my-2">Hello I'm</p>
-          <h1 className="text-6xl my-2">K P Ramanath</h1>
-          <h2 className="text-2xl text-gray-600 my-2">Full Stack Developer</h2>
+          <p className="md:text-xl text-gray-600 my-2">Hello I'm</p>
+          <h1 className="text-4xl md:text-6xl my-2">K P Ramanath</h1>
+          <h2 className="text-xl md:text-2xl text-gray-600 my-2">
+            Full Stack Developer
+          </h2>
         </div>
         <div className="my-2 font-semibold">
-          <button className="outline border-black py-3 px-5 rounded-full m-3">
+          <button className="border-2 border-black py-2 md:py-3 px-3 md:px-5 rounded-full m-3">
             Download CV
           </button>
-          <button className="outline border-black bg-black text-white py-3 px-5 m-3 rounded-full">
+          <button className="border-2 border-black bg-black text-white py-2 md:py-3 px-3 md:px-5 rounded-full m-3">
             Contact Info
           </button>
         </div>
