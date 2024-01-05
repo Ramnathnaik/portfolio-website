@@ -2,7 +2,10 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const Experience = () => {
   return (
-    <div className="mt-24 mx-4 md:mx-36 text-center font-semibold">
+    <div
+      id="experience"
+      className="mt-24 mx-4 md:mx-36 text-center font-semibold"
+    >
       <p className="text-gray-600 my-2 dark:text-gray-300">Explore My</p>
       <h1 className="text-4xl md:text-6xl my-2">Experience</h1>
       <div className="flex flex-col md:flex-row my-16 md:my-24 items-center gap-10">

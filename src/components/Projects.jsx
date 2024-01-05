@@ -1,6 +1,9 @@
 const Projects = () => {
   return (
-    <div className="mt-24 mx-4 md:mx-36 text-center font-semibold">
+    <div
+      id="projects"
+      className="mt-24 mx-4 md:mx-36 text-center font-semibold"
+    >
       <p className="text-gray-600 my-2 dark:text-gray-300">Browse My Recent</p>
       <h1 className="text-4xl md:text-6xl my-2">Projects</h1>
       <div className="flex flex-col md:flex-row my-12 md:my-24 items-center">

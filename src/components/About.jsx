@@ -4,7 +4,7 @@ import SchoolIcon from "@mui/icons-material/School";
 
 const About = () => {
   return (
-    <div className="mx-4 md:mx-36 text-center font-semibold">
+    <div id="about" className="mx-4 md:mx-36 text-center font-semibold">
       <p className="text-gray-600 dark:text-gray-300 my-2">Get to Know More</p>
       <h1 className="text-4xl md:text-6xl my-2">About Me</h1>
       <div className="flex justify-center my-12 md:my-24 items-center">

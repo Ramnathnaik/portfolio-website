@@ -5,6 +5,8 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDarkMode } from "../utils/appSlice";
+import { Link as Link1 } from "react-router-dom";
+import { Link as Link2 } from "react-scroll";
 
 const Header = () => {
   const [panel, setPanel] = useState(false);
@@ -23,20 +25,58 @@ const Header = () => {
           : "flex justify-between md:justify-around items-center pt-10 mb-10 mx-5"
       }
     >
-      <h1
-        className={
-          panel
-            ? "hidden md:block font-semibold text-xl md:text-3xl"
-            : "font-semibold text-xl md:text-3xl"
-        }
-      >
-        Ramanath
-      </h1>
+      <Link1 to="/">
+        <h1
+          className={
+            panel
+              ? "hidden md:block font-semibold text-xl md:text-3xl"
+              : "font-semibold text-xl md:text-3xl"
+          }
+        >
+          Ramanath
+        </h1>
+      </Link1>
       <ul className="hidden md:flex justify-around text-2xl">
-        <li className="mx-5">About</li>
-        <li className="mx-5">Experience</li>
-        <li className="mx-5">Projects</li>
-        <li className="mx-5">Contact</li>
+        <Link2
+          className="mx-5 cursor-pointer"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-70}
+        >
+          About
+        </Link2>
+        <Link2
+          className="mx-5 cursor-pointer"
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={700}
+          offset={-70}
+        >
+          Experience
+        </Link2>
+        <Link2
+          className="mx-5 cursor-pointer"
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={900}
+          offset={-30}
+        >
+          Projects
+        </Link2>
+        <Link2
+          className="mx-5 cursor-pointer"
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          offset={-70}
+        >
+          Contact
+        </Link2>
         {!darkMode ? (
           <div onClick={switchDarkMode}>
             <DarkModeIcon fontSize="large" />
@@ -73,10 +113,50 @@ const Header = () => {
           </div>
           <div className="w-screen h-screen z-10 pr-2">
             <ul className="flex flex-col gap-4 items-end text-xl">
-              <li className="mx-5">About</li>
-              <li className="mx-5">Experience</li>
-              <li className="mx-5">Projects</li>
-              <li className="mx-5">Contact</li>
+              <Link2
+                className="mx-5 cursor-pointer"
+                to="about"
+                onClick={() => setPanel(false)}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-850}
+              >
+                About
+              </Link2>
+              <Link2
+                className="mx-5 cursor-pointer"
+                to="experience"
+                onClick={() => setPanel(false)}
+                spy={true}
+                smooth={true}
+                duration={700}
+                offset={-950}
+              >
+                Experience
+              </Link2>
+              <Link2
+                className="mx-5 cursor-pointer"
+                to="projects"
+                onClick={() => setPanel(false)}
+                spy={true}
+                smooth={true}
+                duration={900}
+                offset={-1000}
+              >
+                Projects
+              </Link2>
+              <Link2
+                className="mx-5 cursor-pointer"
+                to="contact"
+                onClick={() => setPanel(false)}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                offset={-70}
+              >
+                Contact
+              </Link2>
             </ul>
           </div>
         </div>
