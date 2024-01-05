@@ -12,17 +12,19 @@ const Hero = () => {
       />
       <div className="flex flex-col justify-center items-center">
         <div className="font-semibold">
-          <p className="md:text-xl text-gray-600 my-2">Hello I'm</p>
+          <p className="md:text-xl text-gray-600 my-2 dark:text-gray-300">
+            Hello I'm
+          </p>
           <h1 className="text-4xl md:text-6xl my-2">K P Ramanath</h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 my-2">
+          <h2 className="text-xl md:text-2xl text-gray-600 my-2 dark:text-gray-300">
             Full Stack Developer
           </h2>
         </div>
         <div className="my-2 font-semibold">
-          <button className="border-2 border-black py-2 md:py-3 px-3 md:px-5 rounded-full m-3">
+          <button className="border-2 border-black py-2 md:py-3 px-3 md:px-5 rounded-full m-3 dark:bg-white dark:border-white dark:text-black">
             Download CV
           </button>
-          <button className="border-2 border-black bg-black text-white py-2 md:py-3 px-3 md:px-5 rounded-full m-3">
+          <button className="border-2 border-black bg-black text-white py-2 md:py-3 px-3 md:px-5 rounded-full m-3 dark:border-white">
             Contact Info
           </button>
         </div>

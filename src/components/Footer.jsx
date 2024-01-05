@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Footer = () => {
   return (
     <div className="mt-24 mx-4 md:mx-36 text-center font-semibold flex flex-col items-center">
-      <p className="text-gray-600 my-2">Get In Touch</p>
+      <p className="text-gray-600 my-2 dark:text-gray-300">Get In Touch</p>
       <h1 className="text-4xl md:text-6xl my-2">Contact Me</h1>
       <div className="border-2 border-gray-400 px-6 py-4 m-4 rounded-3xl flex justify-around md:w-1/3 mt-12 mb-52 gap-4">
         <div>
@@ -24,7 +24,7 @@ const Footer = () => {
           <li className="mx-5">Github</li>
         </ul>
       </div>
-      <p className="font-normal mt-24 mb-12 text-gray-600 text-xs md:text-base">
+      <p className="font-normal mt-24 mb-12 text-gray-600 dark:text-gray-300 text-xs md:text-base">
         Copyright &copy; 2024 K P Ramanath. All Rights Reserved
       </p>
     </div>

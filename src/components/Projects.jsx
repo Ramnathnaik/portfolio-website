@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <div className="mt-24 mx-4 md:mx-36 text-center font-semibold">
-      <p className="text-gray-600 my-2">Browse My Recent</p>
+      <p className="text-gray-600 my-2 dark:text-gray-300">Browse My Recent</p>
       <h1 className="text-4xl md:text-6xl my-2">Projects</h1>
       <div className="flex flex-col md:flex-row my-12 md:my-24 items-center">
         <div className="border-2 border-gray-400 p-4 mt-4 md:m-4 rounded-3xl">
