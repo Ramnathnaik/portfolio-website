@@ -119,4 +119,4 @@ export const projects = [
   },
 ];
 
-export const email = "ramnathnaik447@gmail.com";
+export const email = "mailto:ramnathnaik447@gmail.com";

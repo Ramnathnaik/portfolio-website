@@ -78,11 +78,11 @@ const Header = () => {
           Contact
         </Link2>
         {!darkMode ? (
-          <div onClick={switchDarkMode}>
+          <div onClick={switchDarkMode} className="cursor-pointer">
             <DarkModeIcon fontSize="large" />
           </div>
         ) : (
-          <div onClick={switchDarkMode}>
+          <div onClick={switchDarkMode} className="cursor-pointer">
             <LightModeIcon fontSize="large" />
           </div>
         )}
@@ -90,15 +90,15 @@ const Header = () => {
       {!panel && (
         <div className="md:hidden flex gap-4">
           {!darkMode ? (
-            <div onClick={switchDarkMode}>
+            <div onClick={switchDarkMode} className="cursor-pointer">
               <DarkModeIcon />
             </div>
           ) : (
-            <div onClick={switchDarkMode}>
+            <div onClick={switchDarkMode} className="cursor-pointer">
               <LightModeIcon />
             </div>
           )}
-          <div onClick={() => setPanel(true)}>
+          <div onClick={() => setPanel(true)} className="cursor-pointer">
             <MenuIcon />
           </div>
         </div>
@@ -106,7 +106,7 @@ const Header = () => {
       {panel && (
         <div className="md:hidden bg-white w-screen h-screen pr-5 dark:bg-black">
           <div
-            className="flex justify-end mb-4"
+            className="flex justify-end mb-4 cursor-pointer"
             onClick={() => setPanel(false)}
           >
             <CloseIcon />
