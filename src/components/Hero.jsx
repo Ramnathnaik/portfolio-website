@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -21,16 +22,45 @@ const Hero = () => {
           </h2>
         </div>
         <div className="my-2 font-semibold">
-          <button className="border-2 border-black py-2 md:py-3 px-3 md:px-5 rounded-full m-3 dark:bg-white dark:border-white dark:text-black">
-            Download CV
-          </button>
-          <button className="border-2 border-black bg-black text-white py-2 md:py-3 px-3 md:px-5 rounded-full m-3 dark:border-white">
-            Contact Info
-          </button>
+          <a
+            href="RamanathKP-Resume.pdf"
+            download="RamanathKP-Resume.pdf"
+            target="_blank"
+          >
+            <button className="border-2 border-black py-2 md:py-3 px-3 md:px-5 rounded-full m-3 dark:bg-white dark:border-white dark:text-black hover:shadow-xl">
+              Download CV
+            </button>
+          </a>
+          <Link
+            className="mx-5 cursor-pointer"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            offset={-70}
+          >
+            <button className="border-2 border-black bg-black text-white py-2 md:py-3 px-3 md:px-5 rounded-full m-3 dark:border-white hover:shadow-xl">
+              Contact Info
+            </button>
+          </Link>
         </div>
         <div className="my-2 flex gap-4">
-          <GitHubIcon fontSize="large" />
-          <LinkedInIcon fontSize="large" />
+          <div
+            className="cursor-pointer"
+            onClick={() =>
+              window.open("https://github.com/Ramnathnaik", "_blank")
+            }
+          >
+            <GitHubIcon fontSize="large" />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/ramanath-k-p/", "_blank")
+            }
+          >
+            <LinkedInIcon fontSize="large" />
+          </div>
         </div>
       </div>
     </div>
