@@ -1,4 +1,5 @@
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { backendExperience, frontendExperience } from "../utils/constants";
+import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
@@ -13,62 +14,22 @@ const Experience = () => {
           <h1 className="text-xl md:text-2xl my-2">Frontend Development</h1>
           <div className="grid grid-cols-12 place-items-center">
             <div className="col-span-6 my-2 md:my-4">
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
+              {frontendExperience.panel1.map((item) => (
+                <ExperienceCard
+                  key={item.id}
+                  tech={item.tech}
+                  expr={item.expr}
+                />
+              ))}
             </div>
             <div className="col-span-6 my-4">
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
+              {frontendExperience.panel2.map((item) => (
+                <ExperienceCard
+                  key={item.id}
+                  tech={item.tech}
+                  expr={item.expr}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -76,62 +37,22 @@ const Experience = () => {
           <h1 className="text-xl md:text-2xl my-2">Backend Development</h1>
           <div className="grid grid-cols-12 place-items-center">
             <div className="col-span-6 my-2 md:my-4">
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
+              {backendExperience.panel1.map((item) => (
+                <ExperienceCard
+                  key={item.id}
+                  tech={item.tech}
+                  expr={item.expr}
+                />
+              ))}
             </div>
             <div className="col-span-6 my-4">
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
-              <div className="flex p-2 m-2 items-center">
-                <CheckCircleIcon fontSize="small" />
-                <div className="mx-4 flex flex-col items-start">
-                  <h1 className="md:text-xl">HTML</h1>
-                  <p className="text-gray-600 text-sm dark:text-gray-300">
-                    Experienced
-                  </p>
-                </div>
-              </div>
+              {backendExperience.panel2.map((item) => (
+                <ExperienceCard
+                  key={item.id}
+                  tech={item.tech}
+                  expr={item.expr}
+                />
+              ))}
             </div>
           </div>
         </div>

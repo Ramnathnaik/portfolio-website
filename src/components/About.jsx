@@ -1,6 +1,6 @@
 import React from "react";
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import SchoolIcon from "@mui/icons-material/School";
+import { aboutDetails } from "../utils/constants";
+import AboutCard from "./AboutCard";
 
 const About = () => {
   return (
@@ -15,30 +15,21 @@ const About = () => {
         />
         <div className="flex items-center flex-col">
           <div className="flex flex-col md:flex-row justify-evenly gap-2">
-            <div className="w-80 h-44 md:h-48 p-5 md:p-10 border-2 border-gray-400 m-2 rounded-2xl">
-              <WorkspacePremiumIcon fontSize="large" />
-              <h1 className="text-2xl my-1">Experience</h1>
-              <p className="text-gray-600 my-1 dark:text-gray-300">3+ years</p>
-              <p className="text-gray-600 my-1 dark:text-gray-300">
-                Full Stack Developer
-              </p>
-            </div>
-            <div className="w-80 h-44 md:h-48 p-5 md:p-10 border-2 border-gray-400 m-2 rounded-2xl">
-              <SchoolIcon fontSize="large" />
-              <h1 className="text-2xl my-1">Education</h1>
-              <p className="text-gray-600 my-1 dark:text-gray-300">
-                B.E Bachelors Degree
-              </p>
-              <p className="text-gray-600 my-1 dark:text-gray-300">
-                CMR Institute of Technology
-              </p>
-            </div>
+            {aboutDetails.map((item) => (
+              <AboutCard
+                key={item.id}
+                icon={item.icon}
+                line1={item.line1}
+                line2={item.line2}
+                line3={item.line3}
+              />
+            ))}
           </div>
           <div className="mt-5 grid items-start w-4/5 text-gray-600 dark:text-gray-300">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              exercitationem numquam provident nobis corrupti explicabo expedita
-              possimus corporis iste natus debitis odio
+              Full stack software developer with expertise in front-end and
+              back-end development, experienced in leading cross-functional
+              teams.
             </p>
           </div>
         </div>
