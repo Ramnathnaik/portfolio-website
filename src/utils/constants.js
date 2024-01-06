@@ -91,3 +91,32 @@ export const aboutDetails = [
     icon: WorkspacePremiumIcon,
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    imagePath: "/youtube-clone-project.jpg",
+    altText: "Youtube Clone Project",
+    title: "Youtube Clone",
+    link: "https://github.com/Ramnathnaik/namaste-react/tree/master/youtube-clone",
+    live: "https://x.com/ramnathnaik447/status/1716061208569368674?s=20",
+  },
+  {
+    id: 2,
+    imagePath: "/microservices-project.jpg",
+    altText: "Microservices Project",
+    title: "Microservices CI/CD",
+    link: "https://github.com/Ramnathnaik/hotel-management-microservices-cicd",
+    live: "/",
+  },
+  {
+    id: 3,
+    imagePath: "/todo-app.png",
+    altText: "Work Manager",
+    title: "Work Manager",
+    link: "https://github.com/Ramnathnaik/work-manager",
+    live: "https://work-manager-eight.vercel.app/signup",
+  },
+];
+
+export const email = "ramnathnaik447@gmail.com";
