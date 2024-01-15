@@ -10,7 +10,7 @@ const About = () => {
       <div className="flex justify-center my-12 md:my-24 items-center">
         <img
           className="hidden md:block w-96 rounded-2xl shadow-2xl"
-          src="/document.jpeg"
+          src="/profile-pic-1.png"
           alt="About Me"
         />
         <div className="flex items-center flex-col">

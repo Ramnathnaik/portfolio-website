@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <div className="mx-5 my-36 flex justify-center gap-56">
       <img
-        className="hidden md:block rounded-full w-96 shadow-2xl"
-        src="/document.jpeg"
+        className="hidden md:block rounded-full w-96 shadow-2xl object-cover"
+        src="/profile-pic-1.png"
         alt="protfolio"
       />
       <div className="flex flex-col justify-center items-center">
